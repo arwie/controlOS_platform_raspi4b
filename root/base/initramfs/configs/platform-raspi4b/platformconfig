@@ -114,46 +114,7 @@ PTXCONF_TARGET_EXTRA_LDFLAGS=""
 # end of extra toolchain options       
 # end of architecture                  
 
-PTXCONF_KERNEL=y
-# PTXCONF_KERNEL_INSTALL is not set
-# PTXCONF_KERNEL_MODULES is not set
-PTXCONF_KERNEL_VERSION="bba53a117a4a5c29da892962332ff1605990e17a"
-PTXCONF_KERNEL_MD5="fd34790698c23299df5452c773d92745"
-# PTXCONF_KERNEL_IMAGE_BZ is not set
-# PTXCONF_KERNEL_IMAGE_Z is not set
-# PTXCONF_KERNEL_IMAGE_XIP is not set
-# PTXCONF_KERNEL_IMAGE_U is not set
-# PTXCONF_KERNEL_IMAGE_VM is not set
-# PTXCONF_KERNEL_IMAGE_VMLINUX is not set
-# PTXCONF_KERNEL_IMAGE_VMLINUZ is not set
-PTXCONF_KERNEL_IMAGE_RAW=y
-# PTXCONF_KERNEL_IMAGE_SIMPLE is not set
-PTXCONF_KERNEL_IMAGE="Image"
-PTXCONF_KERNEL_DTB=y
-PTXCONF_KERNEL_DTS_PATH="${PTXDIST_PLATFORMCONFIG_SUBDIR}/dts:${KERNEL_DIR}/arch/${GENERIC_KERNEL_ARCH}/boot/dts"
-PTXCONF_KERNEL_DTS="broadcom/bcm2711-rpi-4-b.dts"
-# PTXCONF_KERNEL_DTBO is not set
-# PTXCONF_KERNEL_CODE_SIGNING is not set
-# PTXCONF_KERNEL_ZSTD is not set
-# PTXCONF_KERNEL_XZ is not set
-# PTXCONF_KERNEL_LZOP is not set
-# PTXCONF_KERNEL_LZ4 is not set
-# PTXCONF_KERNEL_OPENSSL is not set
-# PTXCONF_KERNEL_LIBELF is not set
-# PTXCONF_KERNEL_GCC_PLUGINS is not set
-# PTXCONF_KERNEL_CONFIG_BASE_VERSION is not set
-
-#
-# patching & configuration      
-#
-PTXCONF_KERNEL_SERIES="series"
-PTXCONF_KERNEL_CONFIG="kernelconfig"
-# end of patching & configuration      
-
-#
-# Development features
-#
-PTXCONF_KERNEL_EXTRA_MAKEVARS=""
+# PTXCONF_KERNEL is not set
 
 #
 # console options               
@@ -192,16 +153,6 @@ PTXCONF_BAREBOX_ARCH_STRING="arm"
 # PTXCONF_IMAGE_BOOT_VFAT is not set
 # PTXCONF_IMAGE_HD_VDI is not set
 # PTXCONF_IMAGE_HDIMG is not set
-PTXCONF_IMAGE_KERNEL=y
-
-#
-# Generate images/linuximage    
-#
-PTXCONF_IMAGE_KERNEL_INITRAMFS=y
-PTXCONF_IMAGE_KERNEL_INSTALL_LATE=y
-# PTXCONF_IMAGE_KERNEL_LZOP is not set
-# end of Generate images/linuximage    
-
 # PTXCONF_IMAGE_RAUC is not set
 PTXCONF_IMAGE_ROOT_CPIO=y
 PTXCONF_IMAGE_ROOT_CPIO_COMPRESSION_MODE_NONE=y
@@ -229,17 +180,11 @@ PTXCONF_IMAGE_XPKG_EXTRA_ARGS=""
 # end of ipkg options                  
 
 # PTXCONF_KERNEL_FIT is not set
-# PTXCONF_IMAGE_INSTALL is not set
-PTXCONF_IMAGE_SYSTEM=y
 # end of image creation options        
 
 # PTXCONF_CODE_SIGNING is not set
-PTXCONF_HOST_DOSFSTOOLS=y
 PTXCONF_HOST_GENIMAGE=y
 PTXCONF_HOST_LIBCONFUSE=y
-PTXCONF_HOST_MTOOLS=y
-PTXCONF_HOST_SYSTEM_BC=y
-PTXCONF_RASPI_REBOOT=y
 
 #
 # non-free firmware blobs       
